@@ -5,12 +5,12 @@ import Dashboard from "./pages/Dashboard";
 import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 
-const ProtectedRoute = ({ children }: { children: JSX.Element }) => {
+const ProtectedRoute = ({ children }: { children: React.JSX.Element }) => {
   const { user } = useAuth();
   return user ? children : <Navigate to="/login" />;
 };
 
-const AdminRoute = ({ children }: { children: JSX.Element }) => {
+const AdminRoute = ({ children }: { children: React.JSX.Element }) => {
   const { user } = useAuth();
   return user?.role === "Admin" ? children : <Navigate to="/dashboard" />;
 };

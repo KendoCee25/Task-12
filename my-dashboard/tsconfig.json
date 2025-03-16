@@ -5,7 +5,9 @@
     { "path": "./tsconfig.node.json" }
   ],
     "compilerOptions": {
-      "jsx": "react-jsx",  // ✅ Ensures JSX is properly recognized
+      "jsx": "react-jsx",
+      "strict": true,
+      "allowSyntheticDefaultImports": true,  // ✅ Ensures JSX is properly recognized
       "lib": ["DOM", "ESNext"],  // ✅ Includes DOM types
       "baseUrl": "src",
     "paths": {

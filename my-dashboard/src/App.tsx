@@ -6,7 +6,8 @@ import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import Login from "./pages/Login";
 
-const ProtectedRoute = ({ element, allowedRoles }: { element: JSX.Element; allowedRoles: string[] }) => {
+const ProtectedRoute: React.FC<{ element: React.ReactNode; allowedRoles: string[] }> = ({ element, allowedRoles }) => {
+  // Route logic here...
   const { user } = useAuth();
   return user && allowedRoles.includes(user.role) ? element : <Navigate to="/dashboard" />;
 };
