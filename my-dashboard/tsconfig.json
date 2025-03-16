@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+    "compilerOptions": {
+      "jsx": "react-jsx",  // ✅ Ensures JSX is properly recognized
+      "lib": ["DOM", "ESNext"],  // ✅ Includes DOM types
+      "baseUrl": "src",
+    "paths": {
+      "@context/": ["context/"]
+    },
+      "types": ["react", "react-dom"],  // ✅ Ensures React types are available
+      "skipLibCheck": true // ✅ (Optional) Ignores library checking to prevent false errors
+    }
+}

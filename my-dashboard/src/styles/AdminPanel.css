@@ -1,0 +1,22 @@
+.admin-panel {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .admin-panel h2 {
+    color: #ffcc00;
+  }
+  
+  .admin-panel button {
+    background: #ffcc00;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

@@ -1,0 +1,12 @@
+.viewer-panel {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .viewer-panel h2 {
+    color: #e74c3c;
+  }
